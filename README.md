@@ -61,7 +61,8 @@ data=pd.read_csv("austin_weather_final.csv")
 
 ### 8.Splitting x and y from the dataset
 
-    here we are going to predict the rainfall using its precipitation column so,we are droping that column from x and storing it in the y.(i.e) x contains input values and y contain output values
+    here we are going to predict the rainfall using its precipitation column 
+    so,we are droping that column from x and storing it in the y.(i.e) x contains input values and y contain output values
     
 ```
 x=data.drop(['PrecipitationSumInches'],axis=1)
@@ -109,7 +110,7 @@ plt.show()
 x_vis=x.filter(['TempAvgF','DewPointAvgF','HumidityAvgPercent','SeaLevelPressureAvgInches','VisibilityAvgMiles','WindAvgMPH'])
 ```
 
-plot a  graph between precipitation and attributes. created Create a subplot grid (3 rows, 2 columns, position i+1) inside for loop of ranfe contains no of columns in x_vis.And using scatter plot to predict the trend.
+plot a  graph between precipitation and attributes. created Create a subplot grid (3 rows, 2 columns, position i+1) inside for loop of range contains no of columns in x_vis. And using scatter plot to predict the trend.
 
    
 ```
